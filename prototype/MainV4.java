@@ -252,13 +252,13 @@ public class MainV4 {
     Room roomProto = new Room();
     Door doorProto = new Door(roomProto,roomProto);
 
-    MazeFactory factory =
-        new MazePrototypeFactory(mazeProto, wallProto,
-            roomProto, doorProto);
-
 //    MazeFactory factory =
-//        new EnchantedMazeFactory(mazeProto, wallProto,
+//        new MazePrototypeFactory(mazeProto, wallProto,
 //            roomProto, doorProto);
+
+    MazeFactory factory =
+        new EnchantedMazeFactory(mazeProto, wallProto,
+            roomProto, doorProto);
 
     Maze maze = game.createMaze(factory);
   }

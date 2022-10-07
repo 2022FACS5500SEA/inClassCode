@@ -1,5 +1,5 @@
 interface I {
-  public void doSomething();
+  void doSomething();
 }
 
 class D implements I {
@@ -8,19 +8,18 @@ class D implements I {
   }
 }
 
-/*
 class E implements I {
   public void doSomething() {
     System.out.print("Hello from Class EEEEEEE");
   }
 }
-*/
+
 
 class C {
   private I i;
 
   public C() {
-    this.i = new D();
+    this.i = new E();
   }
 
   public void doSomething() {

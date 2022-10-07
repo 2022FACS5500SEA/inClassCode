@@ -187,8 +187,8 @@ class EnchantedMazeFactory extends MazeFactory {
 
 public class MainSingleton {
   public static void main(String[] args) {
-    MazeFactory factory = MazeFactory.instance();
-//    MazeFactory factory = new EnchantedMazeFactory();
+//    MazeFactory factory = MazeFactory.instance();
+    MazeFactory factory = EnchantedMazeFactory.instance();
     MazeGame game = new MazeGame();
     game.createMaze(factory);
   }

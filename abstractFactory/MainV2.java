@@ -177,8 +177,8 @@ class EnchantedMazeFactory extends MazeFactory {
 
 public class MainV2 {
   public static void main(String[] args) {
-    MazeFactory factory = new MazeFactory();
-//    MazeFactory factory = new EnchantedMazeFactory();
+//    MazeFactory factory = new MazeFactory();
+    MazeFactory factory = new EnchantedMazeFactory();
     MazeGame game = new MazeGame();
     game.createMaze(factory);
   }

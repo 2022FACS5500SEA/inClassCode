@@ -100,8 +100,6 @@ class Door extends MapSite {
 }
 
 // Refactored code using Factory methods
-
-// refactored MazeGame
 class MazeGame {
 
   public Maze makeMaze() {
@@ -179,8 +177,8 @@ class EnchantedMazeGame extends MazeGame {
 
 public class MainV3 {
   public static void main(String[] args) {
-    MazeGame game = new MazeGame();
-//    MazeGame game = new EnchantedMazeGame();
+//    MazeGame game = new MazeGame();
+    MazeGame game = new EnchantedMazeGame();
     Maze maze = game.createMaze();
   }
 }
