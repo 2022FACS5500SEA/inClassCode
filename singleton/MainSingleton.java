@@ -55,7 +55,7 @@ class Room extends MapSite {
     return result;
   }
   public String toString() {
-    return "Room #" + new Integer(_roomNr).toString();
+    return "Room #" + this._roomNr;
   }
   private int _roomNr;
   private static int _roomCnt = 1;
